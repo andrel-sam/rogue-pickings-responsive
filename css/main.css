@@ -81,7 +81,7 @@ header nav ul {
 
 header nav ul li {
 	/*font-size: 14px;*/
-	font-size: 1.1429rem;
+	font-size: .875rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	padding: 10px 0;
@@ -169,4 +169,71 @@ footer span {
 	color: #45610E;
 	/*font-size: 14px;*/
 	font-size: 0.875rem;
+}
+
+/***** Media Queries *****/
+
+@media all and (min-width: 768px) {
+    /* Tablet styles here */
+	.bottom-section .content-wrapper {
+		justify-content: space-evenly;
+	}
+	
+	.section-one {
+		width: 26%;
+	}
+	
+	.section-two {
+		width: 40%;
+		border-left: 5px solid #EEE;
+		border-right: 5px solid #EEE;
+		border-top: none;
+		border-bottom: none;
+		padding: 0 30px;
+	}
+	
+	.section-three {
+		width: 26%;
+	}
+	
+	.bottom-section h3 {
+		margin: 30px 0;
+	}
+}
+ 
+@media all and (min-width: 1200px) {
+    /* Desktop styles here */
+
+	body {
+		font-size: 1em;
+	}
+
+	header {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+
+	header .content-wrapper {
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
+	}
+	
+	header h1 {
+		padding: 0;
+		border-bottom: none;
+		width: 30%;
+		text-align: left;
+	}
+	
+	header nav {
+		width: 21%;
+	}
+	
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+		font-size: 0.9em;
+	}
 }
